@@ -16,12 +16,13 @@ function Welcome() {
       </p>
 
       <CardComponent />
+      <CardComponent />
 
-      <img
+      {/* <img
         src="https://wiki.koompi.org/public/Images/interfacekoompiwiki.png"
         width="100%"
         height="420px"
-      />
+      /> */}
       <p style={{ marginTop: 20 }}>
         Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
         definitiones no quo, maluisset concludaturque et eum, altera fabulas ut

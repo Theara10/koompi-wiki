@@ -75,6 +75,17 @@
   margin-top: 20px;
 }
 
+.card {
+  width: 600px;
+  height: 150px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
 /* Preview */
 .preview {
   margin-top: 30px;
