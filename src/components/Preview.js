@@ -1,15 +1,16 @@
 import React from "react";
+import { Anchor } from "antd";
+const { Link } = Anchor;
 
 function Preview() {
   return (
     <div className="preview">
-      <a href="#page1">Page One</a>
-      <br />
-      <a href="#page2">Page Two</a>
-      <br />
-      <a href="#page2">Page three</a>
-      <br />
-      <a href="#page2">Page four</a>
+      <Anchor>
+        <Link href="#page1" title="Welcome" />
+        <Link href="#page2" title="Install" />
+        <Link href="#page3" title="Uninstall Applications" />
+        <Link href="#page4" title="Open Konsole" />
+      </Anchor>
     </div>
   );
 }
