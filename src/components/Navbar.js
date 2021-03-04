@@ -10,16 +10,14 @@ function Navbar() {
     <div className="navbar">
       <div className="navbar-container">
         <div className="logo-container">
-          <a href="#">
-            <div className="logo">
-              <img src={img.default} width="30" height="30" />
-              <h2>KOOMPI WIKI</h2>
-            </div>
-          </a>
+          <div to="/" className="logo">
+            <img src={img.default} width="30" height="30" />
+            <h2>KOOMPI WIKI</h2>
+          </div>
         </div>
         <a>
           <h3>
-            <Link to="/">Welcome</Link>{" "}
+            <Link to="/introduction">Introduction</Link>{" "}
           </h3>
         </a>
         <SubMenuComponent />
