@@ -17,15 +17,16 @@ function SubMenuComponent() {
       defaultOpenKeys={["0"]}
       mode="inline"
       style={{ backgroundColor: "#f1f2f6" }}
+      itemIcon="white"
     >
-      {MenuItems.map((item, index) => {
+      {data.map((item, index) => {
         return (
-          <SubMenu key={index} className="submenu-title" title={item.title}>
+          <SubMenu key={index} title={item.title}>
             {item.menus.map((x, i) => {
               return (
                 <Menu.Item
-                  style={{ margin: 0 }}
                   className="menu-item"
+                  style={{ margin: 0 }}
                   key={index + "" + i}
                 >
                   {x.text}
@@ -41,7 +42,24 @@ function SubMenuComponent() {
 
 export default SubMenuComponent;
 
-const MenuItems = [
+const data = [
+  {
+    title: "Basic Command",
+    menus: [
+      {
+        text: "Option 1",
+      },
+      {
+        text: "Option 2",
+      },
+      {
+        text: "Option 3",
+      },
+      {
+        text: "Option 4",
+      },
+    ],
+  },
   {
     title: "KOOMPI OS",
     menus: [
@@ -60,7 +78,41 @@ const MenuItems = [
     ],
   },
   {
-    title: "Basic Command",
+    title: "Applications",
+    menus: [
+      {
+        text: "Option 1",
+      },
+      {
+        text: "Option 2",
+      },
+      {
+        text: "Option 3",
+      },
+      {
+        text: "Option 4",
+      },
+    ],
+  },
+  {
+    title: "Instruction Manuals",
+    menus: [
+      {
+        text: "Option 1",
+      },
+      {
+        text: "Option 2",
+      },
+      {
+        text: "Option 3",
+      },
+      {
+        text: "Option 4",
+      },
+    ],
+  },
+  {
+    title: "New Release",
     menus: [
       {
         text: "Option 1",

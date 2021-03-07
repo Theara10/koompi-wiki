@@ -1,3 +1,10 @@
+* {
+  margin: 0px;
+}
+body {
+  font-family: fantasy;
+}
+
 /* Navbar */
 .navbar {
   height: 100%;
@@ -9,46 +16,71 @@
 
   overflow-x: hidden;
   padding-top: 20px;
-  background-color: #f1f2f6;
+  background-color: #262e3c;
   border-right: 1px solid lightgray;
 }
 
 .logo {
   display: flex;
-  margin-left: 20px;
+  margin-left: 30px;
+  /* justify-content: center; */
+  align-items: center;
 }
-
-.logo h2 {
-  margin-left: 5px;
-}
-
-.logo-container {
-  border-bottom: 1px solid lightgray;
-  /* border-bottom-width: 1px; */
-  /* border-style: solid; */
-}
-
-.submenu-title {
-  font-size: 16px;
+.logo-text {
+  color: #37a8c7;
+  font-size: 22px;
+  margin-top: 10px;
   font-weight: bold;
-  /* background-color: black; */
+}
+
+.guide {
+  margin-top: 30px;
+  height: 30px;
+  width: 180px;
+  background-color: #3c4350;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.text {
+  color: white;
+  text-align: center;
+}
+
+.ant-menu-submenu-title {
+  padding-left: 30px !important;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #262e3c;
+  color: white;
+  margin: 0px !important;
+}
+.ant-menu-submenu
+  ant-menu-submenu-inline
+  ant-menu-submenu-open
+  ant-menu-submenu-active {
+  color: #37a8c7;
+}
+.ant-menu-submenu-arrow::before {
+  margin-right: 10px;
+  color: white;
+}
+.ant-menu-submenu-arrow::after {
+  margin-right: 10px;
+  color: white;
 }
 
 .menu-item {
-  background-color: #f1f2f6;
+  background-color: #262e3c;
+  color: white !important;
 }
 
 .navbar a {
-  font-size: 15px;
-  font-weight: bold;
-  color: black;
+  font-size: 18px;
+  margin-left: 30px;
+  color: white;
 }
-
-.navbar h3 {
-  padding: 0px 34px 0px 24px;
-  color: black;
-  font-size: 16px;
-  margin-top: 10px;
+h3 {
+  margin: 0px !important;
 }
 
 /* Main */
