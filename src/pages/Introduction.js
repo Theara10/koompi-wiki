@@ -2,7 +2,7 @@ import React from "react";
 
 function Introduction() {
   return (
-    <div style={{ marginTop: 20 }}>
+    <div style={{ marginTop: 80 }}>
       <h2>A Brief Overview</h2>
       <p>
         Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum

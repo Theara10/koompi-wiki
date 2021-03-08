@@ -17,7 +17,7 @@ function SubMenuComponent() {
       defaultOpenKeys={["0"]}
       mode="inline"
       style={{ backgroundColor: "#f1f2f6" }}
-      itemIcon="white"
+      color={"#37a8c7"}
     >
       {data.map((item, index) => {
         return (
@@ -28,6 +28,7 @@ function SubMenuComponent() {
                   className="menu-item"
                   style={{ margin: 0 }}
                   key={index + "" + i}
+                  // color={"#37a8c7"}
                 >
                   {x.text}
                 </Menu.Item>
@@ -47,7 +48,7 @@ const data = [
     title: "Basic Command",
     menus: [
       {
-        text: "Option 1",
+        text: "Introduction",
       },
       {
         text: "Option 2",

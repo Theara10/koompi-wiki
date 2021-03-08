@@ -16,7 +16,7 @@ function Welcome() {
       </p>
 
       <CardComponent />
-      <CardComponent />
+      {/* <CardComponent /> */}
 
       {/* <img
         src="https://wiki.koompi.org/public/Images/interfacekoompiwiki.png"
