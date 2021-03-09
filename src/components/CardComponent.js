@@ -9,7 +9,7 @@ function CardComponent() {
       {data.map((x) => {
         return (
           <Col span={11} className="card">
-            <img src={img.default} width="40" height="40" />
+            {/* <img src={img.default} width="40" height="40" /> */}
             <div>
               <h4 className="card-title">{x.title}</h4>
               <p className="card-subtitle">{x.subtitle}</p>
@@ -25,19 +25,19 @@ export default CardComponent;
 
 const data = [
   {
-    title: "KOOMPI OS",
+    title: "Read Documents",
     subtitle: "All available command in the open-source world",
   },
   {
-    title: "KOOMPI OS",
+    title: "Watch Tutorials",
     subtitle: "All available command in the open-source world",
   },
   {
-    title: "KOOMPI OS",
+    title: "Join Community",
     subtitle: "This is subtitle",
   },
   {
-    title: "KOOMPI OS",
+    title: "Contribute",
     subtitle: "This is subtitle",
   },
 ];
