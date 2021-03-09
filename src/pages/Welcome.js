@@ -1,6 +1,8 @@
 import React from "react";
 import CardComponent from "../components/CardComponent";
 
+import BottomNav from "../components/BottomNav";
+
 function Welcome() {
   return (
     <div style={{ marginTop: 70 }}>
@@ -16,7 +18,6 @@ function Welcome() {
       </p>
 
       <CardComponent />
-      {/* <CardComponent /> */}
 
       {/* <img
         src="https://wiki.koompi.org/public/Images/interfacekoompiwiki.png"
@@ -65,6 +66,7 @@ function Welcome() {
         laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
         molestiae voluptatibus.
       </p>
+      <BottomNav />
     </div>
   );
 }

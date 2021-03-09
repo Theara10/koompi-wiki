@@ -13,7 +13,7 @@ function SearchBox() {
           placeholder="Search..."
           onSearch={onSearch}
           style={{ width: 745 }}
-          size="large"
+          size="medium"
         />
       </Space>
     </div>
