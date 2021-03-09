@@ -178,12 +178,21 @@ h3 {
 
 /* Preview */
 .preview {
-  margin-top: 75px;
+  margin-top: 20px;
   width: 300px;
   top: 0;
   right: 0;
   float: right;
   position: fixed;
+}
+
+.select-lang {
+  display: flex;
+  align-items: center;
+}
+
+.select-lang p {
+  margin: 0px;
 }
 
 .preview a {
@@ -201,4 +210,8 @@ h3 {
 
 .ant-anchor-ink-ball {
   border-color: #37a8c7 !important;
+}
+
+.anchor {
+  margin-top: 50px;
 }
