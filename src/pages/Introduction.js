@@ -1,4 +1,5 @@
 import React from "react";
+import BottomNav from "../components/BottomNav";
 
 function Introduction() {
   return (
@@ -44,6 +45,8 @@ function Introduction() {
         laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
         molestiae voluptatibus.
       </p>
+
+      <BottomNav />
     </div>
   );
 }

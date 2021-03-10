@@ -9,10 +9,26 @@ function CardComponent() {
       {data.map((x) => {
         return (
           <Col span={11} className="card">
-            {/* <img src={img.default} width="40" height="40" /> */}
-            <div>
-              <h4 className="card-title">{x.title}</h4>
-              <p className="card-subtitle">{x.subtitle}</p>
+            <div className="card-container">
+              <img
+                src="https://png.pngtree.com/png-vector/20190623/ourlarge/pngtree-documentfilepagepenresume-flat-color-icon-vector-png-image_1491048.jpg"
+                width="50"
+                height="50"
+              />
+              <div>
+                <h4 className="card-title">{x.title}</h4>
+                <p className="card-subtitle">{x.subtitle}</p>
+                <p
+                  style={{
+                    paddingTop: 30,
+                    paddingLeft: 15,
+                    fontSize: 15,
+                    color: "#37a8c7",
+                  }}
+                >
+                  Read Now
+                </p>
+              </div>
             </div>
           </Col>
         );
@@ -34,10 +50,10 @@ const data = [
   },
   {
     title: "Join Community",
-    subtitle: "This is subtitle",
+    subtitle: "All available command in the open-source world",
   },
   {
     title: "Contribute",
-    subtitle: "This is subtitle",
+    subtitle: "All available command in the open-source world",
   },
 ];

@@ -9,7 +9,7 @@ const img = require("../lib/img/github_logo.png");
 function Preview() {
   return (
     <div className="preview">
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ display: "flex", alignItems: "center", marginLeft: 50 }}>
         <div className="select-lang">
           <p>KH</p>
           <DownOutlined style={{ fontSize: 10 }} />
@@ -20,7 +20,7 @@ function Preview() {
             style={{
               height: 25,
               width: 60,
-              border: "1px solid #262e3c",
+              border: "0.5px solid #262e3c",
               borderRadius: 3,
               marginLeft: 5,
             }}

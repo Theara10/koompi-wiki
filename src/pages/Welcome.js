@@ -52,21 +52,10 @@ function Welcome() {
         laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
         molestiae voluptatibus.
       </p>
-      <p style={{ marginTop: 20 }}>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
+
+      <p style={{ marginTop: 50, marginBottom: 30 }}>
+        Copyright by © KOOMPI 2020
       </p>
-      <p style={{ marginTop: 20 }}>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <BottomNav />
     </div>
   );
 }
