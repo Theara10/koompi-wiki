@@ -9,6 +9,7 @@ import {
   NotificationOutlined,
 } from "@ant-design/icons";
 import HomePage from "./pages/home";
+import SinglePage from "./pages/single";
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider, Footer } = Layout;
@@ -43,8 +44,11 @@ function App() {
                 }}
               >
                 <Switch>
-                  <Route path="/">
+                  <Route exact path="/">
                     <HomePage />
+                  </Route>
+                  <Route path="/hello/:id">
+                    <SinglePage />
                   </Route>
                 </Switch>
               </Content>
