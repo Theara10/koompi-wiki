@@ -4,7 +4,7 @@
 
 html,
 body {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
 /* Navbar */
@@ -76,6 +76,20 @@ body {
 .ant-menu-submenu-arrow::after {
   margin-right: 20px;
   color: white;
+}
+
+.ant-menu-item {
+  background-color: #262e3c !important;
+}
+.ant-menu-item:hover {
+  color: #37a8c7 !important;
+}
+.ant-menu-item-active {
+  color: #37a8c7 !important;
+}
+
+.ant-menu-item-selected::after {
+  opacity: 0 !important;
 }
 
 .menu-item {

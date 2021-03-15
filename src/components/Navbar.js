@@ -9,13 +9,11 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div to="/" className="logo">
+        <Link to="/" className="logo">
           <img src={img.default} width="auto" height="40" />
+
           <h3 className="logo-text">Wiki</h3>
-        </div>
-        {/* <div className="guide">
-          <p className="text">Guide</p>
-        </div> */}
+        </Link>
         <a>
           <h3>
             <Link to="/introduction">Welcome</Link>{" "}
