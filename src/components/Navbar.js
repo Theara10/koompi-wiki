@@ -1,27 +1,54 @@
 import React from "react";
-import { Menu } from "antd";
 import { Link } from "react-router-dom";
 import SubMenuComponent from "./SubMenuComponent";
-
-const img = require("../lib/img/Koompi-White.png");
+import { Layout, Menu, Breadcrumb } from "antd";
+import {
+  UserOutlined,
+  LaptopOutlined,
+  NotificationOutlined,
+} from "@ant-design/icons";
+import data from "../data/data.json";
+import slugify from "slugify";
+const { SubMenu } = Menu;
+const { Header, Content, Sider, Footer } = Layout;
 
 function Navbar() {
   return (
-    <div className="navbar">
-      <div className="navbar-container">
-        <Link to="/" className="logo">
-          <img src={img.default} width="auto" height="40" />
-
-          <h3 className="logo-text">Wiki</h3>
-        </Link>
-        <a>
-          <h3>
-            <Link to="/introduction">Welcome</Link>{" "}
-          </h3>
-        </a>
-        <SubMenuComponent />
-      </div>
-    </div>
+    <Sider width={300} className="site-layout-background">
+      <h2 className="table-content">Table of Contents</h2>
+      <Menu
+        mode="inline"
+        // defaultSelectedKeys={["1"]}
+        // defaultOpenKeys={["sub1"]}
+        // style={{ height: "100%", borderRight: 0 }}
+      >
+        {data.map((res) => {
+          return (
+            <SubMenu
+              key={slugify(res.menu, {
+                replacement: "-",
+                lower: true,
+              })}
+              icon={<UserOutlined />}
+              title={res.menu}
+            >
+              {res.submenu.map((res) => {
+                return (
+                  <Menu.Item
+                    key={slugify(res.subTitle, {
+                      replacement: "-",
+                      lower: true,
+                    })}
+                  >
+                    {res.subTitle}
+                  </Menu.Item>
+                );
+              })}
+            </SubMenu>
+          );
+        })}
+      </Menu>
+    </Sider>
   );
 }
 
