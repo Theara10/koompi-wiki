@@ -1,0 +1,53 @@
+[
+    {
+        "menu": "Basic Commands",
+        "submenu": [{
+            "subTitle": "Introduction",
+            "url": ""
+        },{
+            "subTitle": "Install/Remove/Update",
+            "url": ""
+        },{
+            "subTitle": "Navigation",
+            "url": ""
+        },{
+            "subTitle": "Directory/File Management",
+            "url": ""
+        },{
+            "subTitle": "Manual guide",
+            "url": ""
+        },{
+            "subTitle": "Power management",
+            "url": ""
+        },{
+            "subTitle": "System",
+            "url": ""
+        }]
+    },
+    {
+        "menu": "KOOMPI OS",
+        "submenu": [{
+            "subTitle": "Desktop environment",
+            "url": ""
+        },{
+            "subTitle": "Files management",
+            "url": ""
+        },{
+            "subTitle": "Application management",
+            "url": ""
+        },{
+            "subTitle": "System maintenance",
+            "url": ""
+        },{
+            "subTitle": "System security",
+            "url": ""
+        },{
+            "subTitle": "System settings",
+            "url": ""
+        },{
+            "subTitle": "System settings modules",
+            "url": ""
+        }]
+    }
+    
+]
