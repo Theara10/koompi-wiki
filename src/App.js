@@ -1,7 +1,7 @@
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Preview from "./components/Preview";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { Layout, Menu, Breadcrumb } from "antd";
 import {
   UserOutlined,
@@ -10,28 +10,17 @@ import {
 } from "@ant-design/icons";
 import HomePage from "./pages/home";
 import SinglePage from "./pages/single";
+import Header from "./components/Header";
 
 const { SubMenu } = Menu;
-const { Header, Content, Sider, Footer } = Layout;
+const { Content, Sider, Footer } = Layout;
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Layout>
-          <Header className="header">
-            <img
-              src="/Koompi-White.png"
-              width="auto"
-              height="50"
-              className="logo"
-            />
-            {/* <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu> */}
-          </Header>
+          <Header />
           <Layout>
             <Navbar />
             <Layout>
@@ -44,16 +33,12 @@ function App() {
                 }}
               >
                 <Switch>
-                  <Route exact path="/">
-                    <HomePage />
-                  </Route>
-                  <Route path="/hello/:id">
-                    <SinglePage />
-                  </Route>
+                  <Route exact path="/" component={HomePage} />
+                  <Route path="/:menu/:id" component={SinglePage} exact />
                 </Switch>
               </Content>
               <Footer style={{ textAlign: "center" }} className="">
-                Ant Design ©2018 Created by Ant UED
+                KOOMPI WIKI ©2021 Created by KOOMPI
               </Footer>
             </Layout>
           </Layout>

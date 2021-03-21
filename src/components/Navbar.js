@@ -32,15 +32,16 @@ function Navbar() {
               icon={<UserOutlined />}
               title={res.menu}
             >
-              {res.submenu.map((res) => {
+              {res.submenu.map((x) => {
                 return (
                   <Menu.Item
-                    key={slugify(res.subTitle, {
+                    key={slugify(x.subTitle, {
                       replacement: "-",
                       lower: true,
                     })}
                   >
-                    {res.subTitle}
+                    {/* <Link to={`${res.SubMenu}` + "/" + `${res.subTitle}`}> */}
+                    <Link to={`/${res.id}/${x.id}`}>{x.subTitle}</Link>
                   </Menu.Item>
                 );
               })}

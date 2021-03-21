@@ -1,15 +1,21 @@
 [
     {
         "menu": "Basic Commands",
+        "id": "basic_commands",
         "submenu": [{
             "subTitle": "Introduction",
-            "url": ""
+            "url": "",
+            "id": 1,
+            "content": " This website is a one-stop platform that gathering the instruction installation, updating, FAQs, and problem-solving. You can learn more about the Linux commands and information. Besides, you can keep up with the latest releases for new features and environment as our teams are always trying their best to deliver the optimal user experience."
         },{
-            "subTitle": "Install/Remove/Update",
-            "url": ""
+          "subTitle": "Install/Remove/Update",
+          "url": "",
+          "id": 2,
+          "content": "Install/Remove/Update content"
         },{
-            "subTitle": "Navigation",
-            "url": ""
+            "subTitle": "Navigation", 
+            "url": "",
+            "id": 3
         },{
             "subTitle": "Directory/File Management",
             "url": ""
@@ -17,15 +23,16 @@
             "subTitle": "Manual guide",
             "url": ""
         },{
-            "subTitle": "Power management",
+            "subTitle": "Power management", 
             "url": ""
         },{
-            "subTitle": "System",
+            "subTitle": "System", 
             "url": ""
         }]
     },
     {
         "menu": "KOOMPI OS",
+        "id": "koompi_os",
         "submenu": [{
             "subTitle": "Desktop environment",
             "url": ""
